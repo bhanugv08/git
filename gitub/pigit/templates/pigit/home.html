@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2> Enter our github username</h2>
+<form action="/pigit/list/" method="post">
+  {% csrf_token %}
+  username : <input type="text" name="username"><br>
+  token : <input type="text" name="token"><br>
+  <input type="submit" value="login">
+</form>
+</body>
+</html>
